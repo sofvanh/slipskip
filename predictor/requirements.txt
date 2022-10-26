@@ -1,0 +1,15 @@
+jupyterlab
+nbclient
+pandas
+sys
+os
+numpy
+datetime
+fmiopendata
+lxml
+importlib
+joblib
+geopandas
+shapely
+sre_constants
+matplotlib
