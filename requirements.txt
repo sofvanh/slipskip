@@ -1,7 +1,6 @@
 jupyterlab
 nbclient
 pandas
-sys
 os
 numpy
 datetime
