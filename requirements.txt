@@ -1,7 +1,6 @@
 jupyterlab
 nbclient
 pandas
-os
 numpy
 datetime
 fmiopendata
