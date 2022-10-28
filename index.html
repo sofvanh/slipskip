@@ -2,15 +2,44 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SlipSkip</title>
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>SlipSkip</h1>
-    <p>Wondering if it's going to be slippery soon?</p>
-    <p>Wonder no longer!</p>
-    <img src="Suomen kartta.png" alt="Map of Finland with slipping forecast">
+    <header>
+        <h1>SlipSkip</h1>
+    </header>
+    <main>
+        <div class="column">
+            <img src="figures/today.png" alt="Map of Finland with slipping forecast">
+        </div>
+        <div class="column">
+            <h4>Forecasting slippery weather</h4>
+            <p>Find out if tomorrow is likely to be slippery. Skip the slip!</p>
+            <h5>Legend</h5>
+            <p>Green: Unlikely to be slippery</p>
+            <p>Orange: Possible to be slippery</p>
+            <p>Red: Likely to be slippery</p>
+            <p></p>
+            <h5>Technical details</h5>
+            <p>SkipSkip implements an ML model trained on data from the Finnish
+                <a href="https://liukastumisvaroitus.fi/en/">Slipping warning service</a> and
+                <a href="https://en.ilmatieteenlaitos.fi/">Finnish Meteorological Institute</a>.
+                It looks at the weather forecast for the next day and predicts the probability of slippery weather.
+                Updates every day.
+            </p>
+        </div>
+    </main>
+    <footer>
+        <a href="https://github.com/sofvanh/slipskip">SlipSkip</a>
+        was created by <a href="https://github.com/UndergroundSea">Eliel Ingervo</a>,
+        <a href="https://github.com/oniht">Oskari Nihtilä</a> and
+        <a href="https://github.com/sofvanh">Sofia Vanhanen</a>
+        </p>
+    </footer>
 </body>
 
 </html>
