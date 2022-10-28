@@ -4,6 +4,7 @@ pandas
 numpy
 datetime
 fmiopendata
+setuptools
 lxml
 importlib
 joblib
