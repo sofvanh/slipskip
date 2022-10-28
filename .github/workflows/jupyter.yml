@@ -7,7 +7,7 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
   schedule:
-    - cron: '50 13 * * *' # TODO change this back after the schedule test
+    - cron: '20 4 * * *' 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -36,7 +36,7 @@ jobs:
         run: jupyter execute predictor/get_data_predict_and_make_map.ipynb
         shell: bash 
 
- # Add new files in folder, commit along with other modified files, push
+      # Add new files in folder, commit along with other modified files, push
       - id: commit
         name: Commit figure
         run:
@@ -46,11 +46,10 @@ jobs:
 
           git add *
 
-          git commit -am "GH ACTION Headlines $(date)"
+          git commit -am "GH ACTION Generate forecast $(date)"
 
-          git push origin gh-pages
+          git push origin main
 
         env:
           REPO_KEY: ${{secrets.GITHUB_TOKEN}}
-
           username: github-actions
