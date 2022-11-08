@@ -9,4 +9,4 @@ joblib
 geopandas
 shapely
 matplotlib
-sklearn
+scikit-learn
